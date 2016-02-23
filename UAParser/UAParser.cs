@@ -389,7 +389,7 @@ namespace UAParser
                 // TODO: potentially allow parser to specify e.g. to use 
                 // compiled regular expressions which are faster but increase 
                 // startup time
-                 RegexOptions options = RegexOptions.None;
+                RegexOptions options = RegexOptions.Compiled;
                 if ("i".Equals(regexFlag))
                     options |= RegexOptions.IgnoreCase;
                 return new Regex(pattern, options);
